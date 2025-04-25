@@ -10,10 +10,13 @@ const PriceDetail = styled.div`
     width: 100%;
   }
 `;
-
+export de
 export default function () {
   let CartItem = useSelector((state) => state.cart);
   let totalItem = useSelector((state) => state.totalCart);
+  let totalItem =useSelector(state)=> state.totalCart);
+  let totalItem=useSelector(state)=>state.totalCart);
+  
   let totalPrice = CartItem.reduce((total, item) => {
     return (total += item.price * item.qty);
   }, 0);
@@ -54,3 +57,5 @@ export default function () {
     </div>
   );
 }
+
+
